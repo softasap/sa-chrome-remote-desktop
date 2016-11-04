@@ -1,2 +1,8 @@
 ---
 # handlers file for sa-chrome-remote-desktop
+
+- name: stop remote desktop
+  command:  /opt/google/chrome-remote-desktop/chrome-remote-desktop --stop
+
+- name: start remote desktop
+  command:  /opt/google/chrome-remote-desktop/chrome-remote-desktop --start

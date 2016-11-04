@@ -26,5 +26,11 @@
     -worktools
     -chromerd
 
-
-
+- name: Update Config file
+  copy:
+    src: chrome-remote-desktop
+    dest: /opt/google/chrome-remote-desktop/chrome-remote-desktop
+    backup: yes
+  notify:
+    - stop remote desktop
+    - start remote desktop
