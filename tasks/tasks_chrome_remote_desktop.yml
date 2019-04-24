@@ -10,7 +10,7 @@
 
 
 - name: Chrome Remote Desktop | download package
-  get_url: 
+  get_url:
     url="http://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb"
     dest="/tmp/chrome-remote-desktop_current_amd64.deb"
   when: chromerd_check_deb.rc == 1
